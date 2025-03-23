@@ -9,7 +9,7 @@ const Navbar: React.FC = () => {
       <div className="flex items-center justify-between">
         <div className="flex items-center gap-3">
           <Wallet className="h-8 w-8 text-primary animate-float" />
-          <span className="font-bold text-2xl md:text-3xl text-primary">SolariumVault</span>
+          <span className="font-bold text-2xl md:text-3xl text-primary">Solana Wallet</span>
         </div>
         <ThemeToggle />
       </div>

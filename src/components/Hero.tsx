@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { Button } from "@/components/ui/button";
 import WalletForm from "./WalletForm";
 import { ChevronDown, Coins, Wallet } from "lucide-react";
+import WalletGenerator from "./WalletForm";
 
 const Hero: React.FC = () => {
   const [activeChain, setActiveChain] = useState<"ethereum" | "solana" | null>(null);
@@ -18,12 +19,12 @@ const Hero: React.FC = () => {
           <span className="text-primary">Secured</span> in One Place
         </h1>
         <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-8">
-          Manage your crypto portfolio with confidence using SolariumVault's state-of-the-art security features and intuitive interface.
+          Manage your crypto portfolio with confidence using Solana Wallet's state-of-the-art security features and intuitive interface.
         </p>
 
         {!activeChain ? (
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-up" style={{ animationDelay: "0.3s" }}>
-            <Button
+            {/* <Button
               className="flex items-center gap-2 h-12 px-6 text-base bg-gradient-to-r from-[#5345ee] to-[#6e5df7] hover:opacity-90 transition-all border-0"
               onClick={() => setActiveChain("ethereum")}
             >
@@ -36,7 +37,7 @@ const Hero: React.FC = () => {
                 <path fill="#fff" d="M0.0009 212.9399L127.9629 286.0139V153.0239L0.0009 212.9399Z" />
               </svg>
               Ethereum Wallet
-            </Button>
+            </Button> */}
             <Button
               className="flex items-center gap-2 h-12 px-6 text-base bg-gradient-to-r from-[#9945ee] to-[#cb5df7] hover:opacity-90 transition-all border-0"
               onClick={() => setActiveChain("solana")}
